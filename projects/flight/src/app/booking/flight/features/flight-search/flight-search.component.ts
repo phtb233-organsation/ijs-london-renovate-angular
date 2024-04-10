@@ -5,6 +5,8 @@ import { injectTicketsFacade } from '../../+state';
 import { Flight } from '../../logic/model/flight';
 import { FlightCardComponent } from '../../ui/flight-card/flight-card.component';
 import { FlightFilterComponent } from '../../ui/flight-filter/flight-filter.component';
+import { patchState } from '@ngrx/signals';
+import { FlightFilter } from '../../logic/model/flight-filter';
 
 
 @Component({
@@ -32,7 +34,9 @@ export class FlightSearchComponent {
   });
   protected flights = this.ticketsFacade.flights;
 
-  protected search(): void {
+  protected search(filter: FlightFilter): void {
+    this.filter.set(filter);
+
     if (!this.filter().from || !this.filter().to) {
       return;
     }
