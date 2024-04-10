@@ -55,6 +55,96 @@
   "nxJsonPlugins": [],
   "fileMap": {
     "projectFileMap": {
+      "flight-legacy": [
+        {
+          "file": "projects/flight-legacy/server.ts",
+          "hash": "8592206898694825127"
+        },
+        {
+          "file": "projects/flight-legacy/src/app/app-routing.module.ts",
+          "hash": "15638978050551223935"
+        },
+        {
+          "file": "projects/flight-legacy/src/app/app.component.html",
+          "hash": "11358065693346708359"
+        },
+        {
+          "file": "projects/flight-legacy/src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "projects/flight-legacy/src/app/app.component.spec.ts",
+          "hash": "6846464615841190427"
+        },
+        {
+          "file": "projects/flight-legacy/src/app/app.component.ts",
+          "hash": "10032996754562109575"
+        },
+        {
+          "file": "projects/flight-legacy/src/app/app.module.server.ts",
+          "hash": "442297493173287456"
+        },
+        {
+          "file": "projects/flight-legacy/src/app/app.module.ts",
+          "hash": "14904235179944175318"
+        },
+        {
+          "file": "projects/flight-legacy/src/app/booking/booking-routing.module.ts",
+          "hash": "4039629510786336519"
+        },
+        {
+          "file": "projects/flight-legacy/src/app/booking/booking.component.html",
+          "hash": "9834385378224645372"
+        },
+        {
+          "file": "projects/flight-legacy/src/app/booking/booking.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "projects/flight-legacy/src/app/booking/booking.component.spec.ts",
+          "hash": "10356484746725258911"
+        },
+        {
+          "file": "projects/flight-legacy/src/app/booking/booking.component.ts",
+          "hash": "15284511648524102300"
+        },
+        {
+          "file": "projects/flight-legacy/src/app/booking/booking.module.ts",
+          "hash": "5379060393375364530"
+        },
+        {
+          "file": "projects/flight-legacy/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "projects/flight-legacy/src/favicon.ico",
+          "hash": "3988961587069885523"
+        },
+        {
+          "file": "projects/flight-legacy/src/index.html",
+          "hash": "6388552632012954397"
+        },
+        {
+          "file": "projects/flight-legacy/src/main.server.ts",
+          "hash": "5318678666866329704"
+        },
+        {
+          "file": "projects/flight-legacy/src/main.ts",
+          "hash": "9374417435436826166"
+        },
+        {
+          "file": "projects/flight-legacy/src/styles.scss",
+          "hash": "2917954890128038984"
+        },
+        {
+          "file": "projects/flight-legacy/tsconfig.app.json",
+          "hash": "15211542768575683844"
+        },
+        {
+          "file": "projects/flight-legacy/tsconfig.spec.json",
+          "hash": "13338856497352866793"
+        }
+      ],
       "flight": [
         {
           "file": "projects/flight/server.ts",
@@ -378,96 +468,6 @@
         },
         {
           "file": "projects/flight/tsconfig.spec.json",
-          "hash": "13338856497352866793"
-        }
-      ],
-      "flight-legacy": [
-        {
-          "file": "projects/flight-legacy/server.ts",
-          "hash": "8592206898694825127"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/app-routing.module.ts",
-          "hash": "15638978050551223935"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/app.component.html",
-          "hash": "11358065693346708359"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/app.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/app.component.spec.ts",
-          "hash": "6846464615841190427"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/app.component.ts",
-          "hash": "10032996754562109575"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/app.module.server.ts",
-          "hash": "442297493173287456"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/app.module.ts",
-          "hash": "14904235179944175318"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/booking/booking-routing.module.ts",
-          "hash": "4039629510786336519"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/booking/booking.component.html",
-          "hash": "9834385378224645372"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/booking/booking.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/booking/booking.component.spec.ts",
-          "hash": "10356484746725258911"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/booking/booking.component.ts",
-          "hash": "15284511648524102300"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/booking/booking.module.ts",
-          "hash": "5379060393375364530"
-        },
-        {
-          "file": "projects/flight-legacy/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "projects/flight-legacy/src/favicon.ico",
-          "hash": "3988961587069885523"
-        },
-        {
-          "file": "projects/flight-legacy/src/index.html",
-          "hash": "6388552632012954397"
-        },
-        {
-          "file": "projects/flight-legacy/src/main.server.ts",
-          "hash": "5318678666866329704"
-        },
-        {
-          "file": "projects/flight-legacy/src/main.ts",
-          "hash": "9374417435436826166"
-        },
-        {
-          "file": "projects/flight-legacy/src/styles.scss",
-          "hash": "2917954890128038984"
-        },
-        {
-          "file": "projects/flight-legacy/tsconfig.app.json",
-          "hash": "15211542768575683844"
-        },
-        {
-          "file": "projects/flight-legacy/tsconfig.spec.json",
           "hash": "13338856497352866793"
         }
       ]
