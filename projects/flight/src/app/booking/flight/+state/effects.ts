@@ -8,9 +8,11 @@ import { ticketActions } from "./actions";
   providedIn: 'root'
 })
 export class TicketEffects {
+  // inject dispatched actions stream
   private actions$ = inject(Actions);
+  // perform API calls
   private flightService = inject(FlightService);
-
+  // when certain events fire, update the store with a list of flights
   loadFlights = createEffect(
     /**
      * Stream 1: Dispatched Actions

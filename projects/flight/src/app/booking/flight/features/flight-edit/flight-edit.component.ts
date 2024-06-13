@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges, SimpleChanges, inject, numberAttribute } from '@angular/core';
-import { NonNullableFormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { NonNullableFormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { initialFlight } from '../../logic/model/flight';
 import { Store } from '@ngrx/store';
 import { routerFeature } from '../../../../shared/+state/router.feature';
@@ -19,10 +19,10 @@ export class FlightEditComponent implements OnChanges {
   @Input() flight = initialFlight;
 
   protected editForm = inject(NonNullableFormBuilder).group({
-    id: [0],
-    from: [''],
-    to: [''],
-    date: [new Date().toISOString()],
+    id: [0, [Validators.required, Validators.min(0)]],
+    from: ['', [Validators.required]],
+    to: ['', [Validators.required]],
+    date: [new Date().toISOString(), [Validators.required]],
     delayed: [false]
   });
 

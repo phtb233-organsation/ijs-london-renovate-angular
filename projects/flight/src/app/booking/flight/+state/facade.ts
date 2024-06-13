@@ -5,7 +5,7 @@ import { ticketFeature } from "./reducer";
 import { FlightFilter } from "../logic/model/flight-filter";
 import { Flight } from "../logic/model/flight";
 
-
+// helper object to dispatch events
 export function injectTicketsFacade() {
   const store = inject(Store);
 

@@ -45,6 +45,7 @@ export class FlightFilterComponent {
     triggerNonReactiveContext(this.localStore.latestFilter, (trigger) => {
       this.selectedFilterControl.setValue(trigger);
     });
+    // Fires the search event, using the latest specified flight filter
     triggerNonReactiveContext(this.localStore.latestFilter, (trigger) => {
       trigger && this.searchTrigger.emit(trigger);
     });

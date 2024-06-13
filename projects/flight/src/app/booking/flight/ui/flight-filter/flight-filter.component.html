@@ -35,7 +35,10 @@
     >
       Search
     </button>
-
+    <!-- The HTML within "<app-flight-filter>" matched by the select attribute will be
+        displayed, replacing the <ng-content> elements.
+        In this case, it's the reset button and some information about
+        the filtered search results. -->
     <ng-content select=".flight-filter-button"></ng-content>
     <ng-content select=".flight-filter-info"></ng-content>
   </div>

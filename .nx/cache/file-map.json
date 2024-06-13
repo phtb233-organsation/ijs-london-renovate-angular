@@ -33,10 +33,15 @@
     "zone.js": "~0.14.3",
     "@angular-architects/ddd": "^17.0.3",
     "@angular-devkit/build-angular": "^17.3.2",
+    "@angular-devkit/core": "^17.3.2",
+    "@angular-devkit/schematics": "^17.3.2",
     "@angular/cli": "^17.3.2",
     "@angular/compiler-cli": "^17.3.0",
     "@ngrx/schematics": "^17.1.1",
     "@ngrx/store-devtools": "^17.1.1",
+    "@nx/angular": "18.2.1",
+    "@nx/workspace": "18.2.1",
+    "@schematics/angular": "^17.3.2",
     "@softarc/eslint-plugin-sheriff": "^0.14.5",
     "@softarc/sheriff-core": "^0.14.5",
     "@types/express": "^4.17.17",
@@ -49,314 +54,406 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "ngx-build-plus": "^17.0.0",
+    "nx": "18.2.1",
     "typescript": "~5.4.2"
   },
   "pathMappings": {},
   "nxJsonPlugins": [],
   "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "package.json",
+        "hash": "6064500346880947042"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "6686520031028425313"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "2493640051437077145"
+      },
+      {
+        "file": "tsconfig.app.json",
+        "hash": "17948364081101022842"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "10215061298012719858"
+      },
+      {
+        "file": "README.md",
+        "hash": "13097427187565229571"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "1649115413602447581"
+      },
+      {
+        "file": "tsconfig.spec.json",
+        "hash": "15575553540147145788"
+      },
+      {
+        "file": "server.ts",
+        "hash": "12846519749316876524"
+      },
+      {
+        "file": "nx.json",
+        "hash": "5046635179441288435"
+      }
+    ],
     "projectFileMap": {
-      "flight-legacy": [
-        {
-          "file": "projects/flight-legacy/server.ts",
-          "hash": "8592206898694825127"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/app-routing.module.ts",
-          "hash": "15638978050551223935"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/app.component.html",
-          "hash": "11358065693346708359"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/app.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/app.component.spec.ts",
-          "hash": "6846464615841190427"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/app.component.ts",
-          "hash": "10032996754562109575"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/app.module.server.ts",
-          "hash": "442297493173287456"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/app.module.ts",
-          "hash": "14904235179944175318"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/booking/booking-routing.module.ts",
-          "hash": "4039629510786336519"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/booking/booking.component.html",
-          "hash": "9834385378224645372"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/booking/booking.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/booking/booking.component.spec.ts",
-          "hash": "10356484746725258911"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/booking/booking.component.ts",
-          "hash": "15284511648524102300"
-        },
-        {
-          "file": "projects/flight-legacy/src/app/booking/booking.module.ts",
-          "hash": "5379060393375364530"
-        },
-        {
-          "file": "projects/flight-legacy/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "projects/flight-legacy/src/favicon.ico",
-          "hash": "3988961587069885523"
-        },
-        {
-          "file": "projects/flight-legacy/src/index.html",
-          "hash": "6388552632012954397"
-        },
-        {
-          "file": "projects/flight-legacy/src/main.server.ts",
-          "hash": "5318678666866329704"
-        },
-        {
-          "file": "projects/flight-legacy/src/main.ts",
-          "hash": "9374417435436826166"
-        },
-        {
-          "file": "projects/flight-legacy/src/styles.scss",
-          "hash": "2917954890128038984"
-        },
-        {
-          "file": "projects/flight-legacy/tsconfig.app.json",
-          "hash": "15211542768575683844"
-        },
-        {
-          "file": "projects/flight-legacy/tsconfig.spec.json",
-          "hash": "13338856497352866793"
-        }
-      ],
       "flight": [
         {
+          "file": "projects/flight/project.json",
+          "hash": "2681314333671987254"
+        },
+        {
           "file": "projects/flight/server.ts",
-          "hash": "12595752495452639528"
+          "hash": "12846519749316876524",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/ssr",
+            "npm:express",
+            "npm:node:url",
+            "npm:node:path"
+          ]
         },
         {
           "file": "projects/flight/src/app/app.component.ts",
-          "hash": "5812981157687633170"
-        },
-        {
-          "file": "projects/flight/src/app/app.config.server copy.ts",
-          "hash": "15184490126418035619"
+          "hash": "1135174135946095551",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "projects/flight/src/app/app.config.server.ts",
-          "hash": "15184490126418035619"
+          "hash": "14750464052796800194",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-server"
+          ]
         },
         {
           "file": "projects/flight/src/app/app.config.ts",
-          "hash": "3055971577205143510"
+          "hash": "10518085678315031426",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/platform-browser",
+            "npm:@angular/router",
+            "npm:@ngrx/effects",
+            "npm:@ngrx/store"
+          ]
         },
         {
           "file": "projects/flight/src/app/app.routes.ts",
-          "hash": "10815681290223397500"
+          "hash": "1812387303707035915",
+          "deps": [
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "projects/flight/src/app/boarding/boarding.routes.ts",
-          "hash": "205024657405435057"
+          "hash": "8292443731302090172",
+          "deps": [
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "projects/flight/src/app/boarding/features/departure/departure.component.html",
-          "hash": "13412985632951007001"
+          "hash": "13478940112100992342"
         },
         {
           "file": "projects/flight/src/app/boarding/features/departure/departure.component.ts",
-          "hash": "5533916880204667462"
+          "hash": "7611159141961275022",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "projects/flight/src/app/boarding/index.ts",
-          "hash": "5704465904420817443"
+          "hash": "13332222016911455892"
         },
         {
           "file": "projects/flight/src/app/booking/booking.routes.ts",
-          "hash": "3770775244176868939"
+          "hash": "5051694925916015451",
+          "deps": [
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "projects/flight/src/app/booking/flight/+state/actions.ts",
-          "hash": "7664335661319353665"
+          "hash": "8090003902280821614",
+          "deps": [
+            "npm:@ngrx/store"
+          ]
+        },
+        {
+          "file": "projects/flight/src/app/booking/flight/+state/effects.ts",
+          "hash": "4428500553582772",
+          "deps": [
+            "npm:rxjs",
+            "npm:@angular/core",
+            "npm:@ngrx/effects"
+          ]
+        },
+        {
+          "file": "projects/flight/src/app/booking/flight/+state/facade.ts",
+          "hash": "18117442293735842392",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@ngrx/store"
+          ]
+        },
+        {
+          "file": "projects/flight/src/app/booking/flight/+state/index.ts",
+          "hash": "11189255925461452282"
         },
         {
           "file": "projects/flight/src/app/booking/flight/+state/model.ts",
-          "hash": "2066381362828506026"
+          "hash": "3554658148043226686"
         },
         {
-          "file": "projects/flight/src/app/booking/flight/+state/ngrx-signals/tickets.signal.store.ts",
-          "hash": "2782988609921924100"
+          "file": "projects/flight/src/app/booking/flight/+state/reducer.ts",
+          "hash": "2566816043143353768",
+          "deps": [
+            "npm:@ngrx/store"
+          ]
         },
         {
-          "file": "projects/flight/src/app/booking/flight/+state/ngrx-store/effects.ts",
-          "hash": "16282830560864629508"
-        },
-        {
-          "file": "projects/flight/src/app/booking/flight/+state/ngrx-store/facade.ts",
-          "hash": "1505011032467141235"
-        },
-        {
-          "file": "projects/flight/src/app/booking/flight/+state/ngrx-store/index.ts",
-          "hash": "18232154211779300123"
-        },
-        {
-          "file": "projects/flight/src/app/booking/flight/+state/ngrx-store/reducer.ts",
-          "hash": "6999955101193623657"
-        },
-        {
-          "file": "projects/flight/src/app/booking/flight/+state/ngrx-store/selectors.ts",
-          "hash": "11147006786323522368"
+          "file": "projects/flight/src/app/booking/flight/+state/selectors.ts",
+          "hash": "10389403375607507376",
+          "deps": [
+            "npm:@ngrx/store"
+          ]
         },
         {
           "file": "projects/flight/src/app/booking/flight/features/flight-booking/flight-booking.component.ts",
-          "hash": "430987104493271548"
+          "hash": "16782388651075278398",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "projects/flight/src/app/booking/flight/features/flight-edit/flight-edit.component.html",
-          "hash": "11363482710543096441"
+          "hash": "13871694360949118563"
         },
         {
           "file": "projects/flight/src/app/booking/flight/features/flight-edit/flight-edit.component.ts",
-          "hash": "2747342045160035036"
+          "hash": "16460481198302829099",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@ngrx/store"
+          ]
         },
         {
           "file": "projects/flight/src/app/booking/flight/features/flight-search/flight-search.component.html",
-          "hash": "6052553383583146105"
+          "hash": "3049827580485827671"
         },
         {
           "file": "projects/flight/src/app/booking/flight/features/flight-search/flight-search.component.ts",
-          "hash": "6492427649030522305"
+          "hash": "11443216618571150198",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@ngrx/signals"
+          ]
         },
         {
           "file": "projects/flight/src/app/booking/flight/flight.routes.ts",
-          "hash": "14175105928252129117"
+          "hash": "4817831919749264964",
+          "deps": [
+            "npm:@angular/router",
+            "npm:@ngrx/effects",
+            "npm:@ngrx/store"
+          ]
         },
         {
           "file": "projects/flight/src/app/booking/flight/index.ts",
-          "hash": "2054076437927308581"
+          "hash": "11828339122567943276"
         },
         {
           "file": "projects/flight/src/app/booking/flight/logic/data-access/flight.resolver.ts",
-          "hash": "4337018149736958549"
+          "hash": "5809648945010353973",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "projects/flight/src/app/booking/flight/logic/data-access/flight.service.ts",
-          "hash": "17143505843572414587"
+          "hash": "3514344011164903239",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "projects/flight/src/app/booking/flight/logic/model/basket.ts",
-          "hash": "7716462117258997271"
+          "hash": "7269270343483578881"
         },
         {
           "file": "projects/flight/src/app/booking/flight/logic/model/flight-filter.ts",
-          "hash": "2150502127123943317"
+          "hash": "15890938804220872131"
         },
         {
           "file": "projects/flight/src/app/booking/flight/logic/model/flight-ticket.ts",
-          "hash": "7259277721192962956"
+          "hash": "10644510536127766103"
         },
         {
           "file": "projects/flight/src/app/booking/flight/logic/model/flight.ts",
-          "hash": "5258530917489039123"
+          "hash": "10476666205129149040"
         },
         {
           "file": "projects/flight/src/app/booking/flight/ui/flight-card/flight-card.component.ts",
-          "hash": "7741131681988341076"
+          "hash": "5119715006753929322",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "projects/flight/src/app/booking/flight/ui/flight-filter/flight-filter.component.html",
-          "hash": "7947930887689397268"
+          "hash": "11401791934282741434"
         },
         {
           "file": "projects/flight/src/app/booking/flight/ui/flight-filter/flight-filter.component.ts",
-          "hash": "14298184762519253450"
+          "hash": "6403166202069821624",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/forms"
+          ]
         },
         {
           "file": "projects/flight/src/app/booking/flight/ui/flight-filter/flight-filter.store.ts",
-          "hash": "1734027925094112955"
+          "hash": "12241597637619705125",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@ngrx/signals",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "projects/flight/src/app/booking/flight/ui/flight-filter/reactive-context.util.ts",
-          "hash": "10054454644530847326"
+          "hash": "12919307104061178007",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "projects/flight/src/app/booking/index.ts",
-          "hash": "4207618104451587912"
+          "hash": "1333669327226310154"
         },
         {
           "file": "projects/flight/src/app/booking/passenger/+state/passenger.signal.store.ts",
-          "hash": "644599662607428218"
+          "hash": "13687479961572973765",
+          "deps": [
+            "npm:@angular-architects/ngrx-toolkit",
+            "npm:@angular/core",
+            "npm:@ngrx/signals",
+            "npm:@ngrx/store",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "projects/flight/src/app/booking/passenger/features/passenger-edit/passenger-edit.component.html",
-          "hash": "11473220521419408159"
+          "hash": "13661431011455066975"
         },
         {
           "file": "projects/flight/src/app/booking/passenger/features/passenger-edit/passenger-edit.component.ts",
-          "hash": "17794872942628085053"
+          "hash": "16055532460424147273",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:rxjs",
+            "npm:@ngrx/signals"
+          ]
         },
         {
           "file": "projects/flight/src/app/booking/passenger/features/passenger-search/passenger-search.component.html",
-          "hash": "6991037391730708292"
+          "hash": "2747979282860756899"
         },
         {
           "file": "projects/flight/src/app/booking/passenger/features/passenger-search/passenger-search.component.ts",
-          "hash": "528958151036998294"
+          "hash": "13335621893427877055",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "projects/flight/src/app/booking/passenger/index.ts",
-          "hash": "15624796897423980470"
+          "hash": "7918225228803325927"
         },
         {
           "file": "projects/flight/src/app/booking/passenger/logic/data-access/passenger.service.ts",
-          "hash": "42347617570966347"
+          "hash": "8317176459112861574",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
         },
         {
           "file": "projects/flight/src/app/booking/passenger/logic/model/passenger.ts",
-          "hash": "5249580477985941289"
+          "hash": "255054873354831871"
         },
         {
           "file": "projects/flight/src/app/booking/passenger/passenger.routes.ts",
-          "hash": "4529295344641696347"
+          "hash": "7973024473824807024",
+          "deps": [
+            "npm:@angular/router",
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "projects/flight/src/app/booking/passenger/util/validation/passenger-status.validator.ts",
-          "hash": "12880537982211951024"
+          "hash": "3679628204605287468",
+          "deps": [
+            "npm:@angular/forms"
+          ]
         },
         {
           "file": "projects/flight/src/app/core/features/home/home.component.ts",
-          "hash": "17569217329278953408"
+          "hash": "1638479944346138249",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
         },
         {
           "file": "projects/flight/src/app/core/index.ts",
-          "hash": "10108497075126993278"
+          "hash": "14624785110661310379"
         },
         {
           "file": "projects/flight/src/app/core/ui/headerbar/headerbar.component.html",
-          "hash": "15230354473243748838"
+          "hash": "6812104621151029956"
         },
         {
           "file": "projects/flight/src/app/core/ui/headerbar/headerbar.component.ts",
-          "hash": "516516761607764783"
+          "hash": "3712211903694021320",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "projects/flight/src/app/core/ui/navigation/navigation.component.html",
-          "hash": "15356818470932571272"
+          "hash": "12278829524478836114"
         },
         {
           "file": "projects/flight/src/app/core/ui/navigation/navigation.component.scss",
@@ -364,79 +461,72 @@
         },
         {
           "file": "projects/flight/src/app/core/ui/navigation/navigation.component.spec.ts",
-          "hash": "16967727797320594134"
+          "hash": "11677236867106976461",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "projects/flight/src/app/core/ui/navigation/navigation.component.ts",
-          "hash": "4057622323295143958"
+          "hash": "11406802707782317037",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "projects/flight/src/app/core/ui/sidebar/sidebar.component.ts",
-          "hash": "1309842264687539121"
+          "hash": "14466947332659787364",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
         },
         {
           "file": "projects/flight/src/app/shared/+state/router.feature.ts",
-          "hash": "6336078841822257670"
+          "hash": "12496617873428520276",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@ngrx/router-store",
+            "npm:@ngrx/store"
+          ]
         },
         {
           "file": "projects/flight/src/app/shared/cd-visualizer/cd-visualizer.ts",
-          "hash": "7974798802595644973"
+          "hash": "12499553806702496290",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
-          "file": "projects/flight/src/app/shared/ngrx-signals-redux/create-redux.ts",
-          "hash": "16929084863591428027"
+          "file": "projects/flight/src/app/shared/config/config.model.ts",
+          "hash": "17464757565279601182"
         },
         {
-          "file": "projects/flight/src/app/shared/ngrx-signals-redux/index.ts",
-          "hash": "10566389201181912077"
+          "file": "projects/flight/src/app/shared/config/config.provide.ts",
+          "hash": "5827897050605504285",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
         },
         {
-          "file": "projects/flight/src/app/shared/ngrx-signals-redux/model.ts",
-          "hash": "2682603424103221381"
-        },
-        {
-          "file": "projects/flight/src/app/shared/ngrx-signals-redux/rxjs-interop/index.ts",
-          "hash": "4274417290213953733"
-        },
-        {
-          "file": "projects/flight/src/app/shared/ngrx-signals-redux/rxjs-interop/redux-method.ts",
-          "hash": "16383980806753676671"
-        },
-        {
-          "file": "projects/flight/src/app/shared/ngrx-signals-redux/signal-redux-store.ts",
-          "hash": "15033431472745329534"
-        },
-        {
-          "file": "projects/flight/src/app/shared/ngrx-signals-redux/util.ts",
-          "hash": "4956925381633560831"
-        },
-        {
-          "file": "projects/flight/src/app/shared/redux-devtools/devtools-connect.ts",
-          "hash": "6243953474577847240"
-        },
-        {
-          "file": "projects/flight/src/app/shared/redux-devtools/devtools-core.ts",
-          "hash": "14500587519641873118"
-        },
-        {
-          "file": "projects/flight/src/app/shared/redux-devtools/index.ts",
-          "hash": "17072466654638213438"
-        },
-        {
-          "file": "projects/flight/src/app/shared/redux-devtools/model.ts",
-          "hash": "10145585937666969781"
-        },
-        {
-          "file": "projects/flight/src/app/shared/redux-devtools/util.ts",
-          "hash": "12659929073540767020"
-        },
-        {
-          "file": "projects/flight/src/app/shared/redux-devtools/with-devtools.ts",
-          "hash": "1056384852902601944"
+          "file": "projects/flight/src/app/shared/config/config.state.ts",
+          "hash": "9395956878493572377",
+          "deps": [
+            "npm:@angular/core"
+          ]
         },
         {
           "file": "projects/flight/src/assets/.gitkeep",
           "hash": "3244421341483603138"
+        },
+        {
+          "file": "projects/flight/src/assets/config.json",
+          "hash": "3503429261002140937"
         },
         {
           "file": "projects/flight/src/assets/paper-design/angular_gradient.png",
@@ -448,87 +538,172 @@
         },
         {
           "file": "projects/flight/src/index.html",
-          "hash": "2502539568303178004"
+          "hash": "9329572031161322039"
         },
         {
           "file": "projects/flight/src/main.server.ts",
-          "hash": "9257623809215978365"
+          "hash": "11653607448136507287",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
         },
         {
           "file": "projects/flight/src/main.ts",
-          "hash": "4169901790405087765"
+          "hash": "4927504514031276065",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
         },
         {
           "file": "projects/flight/src/styles.scss",
-          "hash": "883729811510135740"
+          "hash": "8876787022526734193"
         },
         {
           "file": "projects/flight/tsconfig.app.json",
-          "hash": "15211542768575683844"
+          "hash": "18047083567304406802"
         },
         {
           "file": "projects/flight/tsconfig.spec.json",
-          "hash": "13338856497352866793"
+          "hash": "8046768446203215749"
+        }
+      ],
+      "flight-legacy": [
+        {
+          "file": "projects/flight-legacy/project.json",
+          "hash": "1680198962011287890"
+        },
+        {
+          "file": "projects/flight-legacy/server.ts",
+          "hash": "7982634385108334453",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/ssr",
+            "npm:express",
+            "npm:node:url",
+            "npm:node:path"
+          ]
+        },
+        {
+          "file": "projects/flight-legacy/src/app/app-routing.module.ts",
+          "hash": "6250625392482207240",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "projects/flight-legacy/src/app/app.component.html",
+          "hash": "5625725754865452477"
+        },
+        {
+          "file": "projects/flight-legacy/src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "projects/flight-legacy/src/app/app.component.spec.ts",
+          "hash": "8987816647123399609",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "projects/flight-legacy/src/app/app.component.ts",
+          "hash": "4692248678913307465",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/flight-legacy/src/app/app.module.server.ts",
+          "hash": "7885674756072090716",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-server"
+          ]
+        },
+        {
+          "file": "projects/flight-legacy/src/app/app.module.ts",
+          "hash": "18262802635807959795",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "projects/flight-legacy/src/app/booking/booking-routing.module.ts",
+          "hash": "4833563354132517312",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "projects/flight-legacy/src/app/booking/booking.component.html",
+          "hash": "15595067795620530627"
+        },
+        {
+          "file": "projects/flight-legacy/src/app/booking/booking.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "projects/flight-legacy/src/app/booking/booking.component.spec.ts",
+          "hash": "9831205322597794837",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/flight-legacy/src/app/booking/booking.component.ts",
+          "hash": "1532119849148554035",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "projects/flight-legacy/src/app/booking/booking.module.ts",
+          "hash": "5684033738629059881",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "projects/flight-legacy/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "projects/flight-legacy/src/favicon.ico",
+          "hash": "3988961587069885523"
+        },
+        {
+          "file": "projects/flight-legacy/src/index.html",
+          "hash": "8021538322405211960"
+        },
+        {
+          "file": "projects/flight-legacy/src/main.server.ts",
+          "hash": "1797789495484982956"
+        },
+        {
+          "file": "projects/flight-legacy/src/main.ts",
+          "hash": "12246588107753938993",
+          "deps": [
+            "npm:@angular/platform-browser-dynamic"
+          ]
+        },
+        {
+          "file": "projects/flight-legacy/src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "projects/flight-legacy/tsconfig.app.json",
+          "hash": "18047083567304406802"
+        },
+        {
+          "file": "projects/flight-legacy/tsconfig.spec.json",
+          "hash": "8046768446203215749"
         }
       ]
-    },
-    "nonProjectFiles": [
-      {
-        "file": ".editorconfig",
-        "hash": "17241496168097493888"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "6173469676133756775"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "11934160580685414355"
-      },
-      {
-        "file": ".vscode/launch.json",
-        "hash": "17406702432687230417"
-      },
-      {
-        "file": ".vscode/settings.json",
-        "hash": "16432215551666450884"
-      },
-      {
-        "file": ".vscode/tasks.json",
-        "hash": "10093397977228577162"
-      },
-      {
-        "file": "README.md",
-        "hash": "15200205142396958304"
-      },
-      {
-        "file": "angular.json",
-        "hash": "2688371429665162391"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "4284517835972247935"
-      },
-      {
-        "file": "package.json",
-        "hash": "15393843832317136610"
-      },
-      {
-        "file": "server.ts",
-        "hash": "12595752495452639528"
-      },
-      {
-        "file": "tsconfig.app.json",
-        "hash": "2442507913137902887"
-      },
-      {
-        "file": "tsconfig.json",
-        "hash": "3200458784466797971"
-      },
-      {
-        "file": "tsconfig.spec.json",
-        "hash": "5122839733245053999"
-      }
-    ]
+    }
   }
 }
